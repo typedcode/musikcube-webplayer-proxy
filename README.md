@@ -1,3 +1,3 @@
 # musikcube-webplayer-proxy
 
-Proxy for the muskcube-webplayer project
+Proxy for the musikcube-webplayer project
