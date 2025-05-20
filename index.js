@@ -16,8 +16,10 @@ app.get("/api", (req, res) => {
 
 async function func(req, res) {
     const authString = btoa("default:" + process.env.MUSIKCUBE_PASSWORD);
+    const fetchUrl = API_URL + req.query.externalId;
+    console.log(`Fetching: ${fetchUrl}`);
 
-    let fetchResponse = await fetch(API_URL + req.query.externalId, {
+    let fetchResponse = await fetch(fetchUrl, {
         headers: {
             Authorization: "Basic " + authString,
             "Access-Control-Allow-Origin": "*",

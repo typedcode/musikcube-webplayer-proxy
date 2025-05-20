@@ -1,6 +1,6 @@
 {
   "name": "musikcube-webplayer-proxy",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "proxy for the musikcube webplayer project",
   "author": "typedcode",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "build": "npm run clean && mkdir -p dist/musikcube-webplayer-proxy && npm run esBuild && npm run copyEnvTemplate && npm run pack",
     "esBuild": "esbuild index.js --bundle --platform=node --outfile=dist/musikcube-webplayer-proxy/index.js",
     "copyEnvTemplate" : "cp .env.template dist/musikcube-webplayer-proxy",
-    "pack" : "tar -caf dist/musikcube-webplayer-proxy_${npm_package_version}.tar.gz dist/musikcube-webplayer-proxy/index.js dist/musikcube-webplayer-proxy/.env.template"
+    "pack" : "cd dist && tar -caf musikcube-webplayer-proxy_${npm_package_version}.tar.gz musikcube-webplayer-proxy/index.js musikcube-webplayer-proxy/.env.template && cd .."
   },
   "keywords": [],
   "dependencies": {
