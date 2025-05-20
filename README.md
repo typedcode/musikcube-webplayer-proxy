@@ -20,3 +20,5 @@ You need to have node installed to run this project.
 |MUSIKCUBE_PASSWORD      | If you have set a password to musikcube, you need to set it here|
 |PROXY_PORT              | The port on which the proxy is listening for requests. The default Port is 5000|
 
+For more information see [here](https://github.com/typedcode/musikcube-webplayer)
+
