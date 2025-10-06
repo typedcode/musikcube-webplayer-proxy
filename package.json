@@ -1,6 +1,6 @@
 {
   "name": "musikcube-webplayer-proxy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "proxy for the musikcube webplayer project",
   "author": "typedcode",
   "main": "index.js",
